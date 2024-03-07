@@ -13,6 +13,8 @@
 
     font-family: "Anta", sans-serif;
 
+    color: white;
+
 }
 
 body{
@@ -99,6 +101,8 @@ a{
     width: 100%;
     height: 100%;
 
+    
+
 }
 
 #section-sobre-mim{
@@ -108,27 +112,38 @@ a{
 
 }
 
-.div-left{
+.div-sobre-mim{
 
     width: 50%;
 
-}
+    margin-top: 10vh;
+    color: white;
 
-.div-right{
 
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .img-sobre-mim{
 
-    width: 50vw;
+    width: 25vw;
+    height: 90vh;
+
+}
+
+.titulo-sobre-mim{
+
+    font-size: 3vh;
+
+    color: rgb(0, 190, 0);
 
 }
 
 .img-card{
 
-    width: 50vw;
-    height: 50vh;
+    width: 20vw;
+    height: 20vh;
 
 }
