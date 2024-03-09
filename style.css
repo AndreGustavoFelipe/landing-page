@@ -41,8 +41,8 @@ nav{
     width: 100%;
     height: 9vh;   
 
-    backdrop-filter: blur(10px);
-    background-color: rgba(128, 128, 128, 0.201);
+    backdrop-filter: blur(7px);
+    background-color: rgba(118, 118, 118, 0.201);
 
     display: flex;
     flex-direction: row;
@@ -58,7 +58,7 @@ nav{
     width: 30vw;
     height: 100%;
 
-    margin-right: 2vw;
+    margin-left: 1.7vw;
 
     font-size: 2.2vh;
 
@@ -156,7 +156,7 @@ a{
 
     text-align: justify;
 
-    font-size: 2vh;
+    font-size: 3vh;
 
 }
 
@@ -194,7 +194,7 @@ a{
 .card{
 
     width: 27vw;
-    height: 50vh;
+    height: auto;
 
     background-color: #333333;
 
@@ -205,7 +205,9 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 3vh
+    row-gap: 4.5vh;
+
+    padding-bottom: 5vh;
 
 }
 
@@ -232,7 +234,7 @@ a{
 
     padding-bottom: 1vh;
 
-    font-size: 2.3vh;
+    font-size: 3vh;
 
     color: white;
 
@@ -248,7 +250,7 @@ a{
 
     cursor: default;
 
-    font-size: 2.5vh;
+    font-size: 3.5vh;
 
     transition: 500ms;
 
@@ -262,7 +264,7 @@ a{
     flex-direction: column;
     align-items: center;
 
-    row-gap: 4vh;
+    row-gap: 2vh;
 
 }
 
@@ -270,14 +272,14 @@ a{
 
     text-align: justify;
 
-    font-size: 1.5vh;
+    font-size: 2.2vh;
 
 }
 
 
 .img-card{
 
-    width: 15vw;
+    width: 11vw;
     height: auto;
 
 }
@@ -303,12 +305,12 @@ a{
 .btn{
 
     width: 12vw;
-    height: 3vh;
+    height: 5vh;
 
     color: white;
     background-color: transparent;
 
-    font-size: 1.7vh;
+    font-size: 2.5vh;
 
     display: flex;
     justify-content: center;
@@ -327,11 +329,11 @@ a{
 
     border-radius: 20px;
 
-    font-size: 1.8vh;
+    font-size: 2.8vh;
 
     cursor: pointer;
 
-    transition: 500ms;
+    transition: 700ms;
 
 }
 
@@ -405,7 +407,7 @@ i:hover{
 
     padding-bottom: 1vh;
 
-    font-size: 4vh;
+    font-size: 4.5vh;
 
     color: white;
 
@@ -424,5 +426,3 @@ i:hover{
     transition: 500ms;
 
 }
-
-
