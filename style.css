@@ -21,6 +21,8 @@ body{
 
     height: 100%;
 
+    overflow-y: scroll; /* Mostrar barra de rolagem vertical apenas quando necessário */
+
 }
 
 header{
@@ -54,9 +56,11 @@ nav{
 .ul-nav{
 
     width: 30vw;
-    height: 3vh;
+    height: 100%;
 
-    font-size: 2.3vh;
+    margin-right: 2vw;
+
+    font-size: 2.2vh;
 
     display: flex;
     flex-direction: row;
@@ -64,6 +68,8 @@ nav{
     align-items: center;
 
     list-style: none;
+
+    gap: 5%;
 
 }
 
@@ -148,6 +154,10 @@ a{
     width: 40vw;
     margin-top: 4vh;
 
+    text-align: justify;
+
+    font-size: 2vh;
+
 }
 
 #section-tecnologias{
@@ -163,11 +173,13 @@ a{
 
 #tecnologias{
 
-    margin: 2%;
+    margin: 3%;
 
 }
 
 .container-cards{
+
+    width: 100%;
 
     display: flex;
     flex-direction: row;
@@ -220,7 +232,7 @@ a{
 
     padding-bottom: 1vh;
 
-    font-size: 2vh;
+    font-size: 2.3vh;
 
     color: white;
 
@@ -236,6 +248,8 @@ a{
 
     cursor: default;
 
+    font-size: 2.5vh;
+
     transition: 500ms;
 
 }
@@ -243,6 +257,12 @@ a{
 .card-bottom{
 
     width: 24vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 4vh;
 
 }
 
@@ -265,6 +285,53 @@ a{
 #section-portifolio{
 
     background-color: #1a1a1a;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#portifolio{
+
+    margin: 3%;
+
+    
+
+}
+
+.btn{
+
+    width: 12vw;
+    height: 3vh;
+
+    color: white;
+    background-color: transparent;
+
+    font-size: 1.7vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgb(0, 190, 0, 0.500);
+    border-radius: 10px;
+
+}
+
+.btn:hover{
+
+    color: rgb(0, 190, 0, 0.500);
+
+    border: 1px solid white;
+
+    border-radius: 20px;
+
+    font-size: 1.8vh;
+
+    cursor: pointer;
+
+    transition: 500ms;
 
 }
 
