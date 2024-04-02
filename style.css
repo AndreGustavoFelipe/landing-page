@@ -426,3 +426,48 @@ i:hover{
     transition: 500ms;
 
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 450px){
+
+    /*navbar*/
+
+    
+
+    /*section sobre mim*/
+
+    .titulos-h2{
+
+        width: 35vw;
+
+        font-size: 2.7vh;
+
+    }
+
+    .p-sobre-mim{
+
+        width: 40vw;
+    
+        font-size: 2vh;
+    
+    }
+
+    .img-sobre-mim{
+
+        width: 40vw;
+        height: 37vh;
+    
+    }
+
+}
+
+@media (min-width: 451px) and (max-width: 750px){
+
+    
+}
+
+@media (min-width: 751px) and (max-width: 1250px){
+
+    
+}
