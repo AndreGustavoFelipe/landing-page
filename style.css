@@ -458,6 +458,35 @@ i:hover{
     
     }
 
+    /*Cards*/
+
+    .card{
+
+        width: 80vw;
+        height: auto;
+    
+        padding-bottom: 5vh;
+    
+    }
+
+    .titulo-card{
+
+        width: 50vw;
+    
+        padding-bottom: 1vh;
+    
+        font-size: 3vh;
+    
+    }
+    
+    .card-bottom{
+    
+        width: 67vw;
+    
+        row-gap: 2vh;
+    
+    }
+
 }
 
 @media (min-width: 451px) and (max-width: 750px){
