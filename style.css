@@ -460,10 +460,19 @@ i:hover{
 
     /*Cards*/
 
+    .img-card{
+
+        width: 35vw;
+        height: auto;
+    
+    }
+
     .card{
 
         width: 80vw;
         height: auto;
+
+        margin-top: 2vh;
     
         padding-bottom: 5vh;
     
@@ -485,6 +494,29 @@ i:hover{
     
         row-gap: 2vh;
     
+    }
+
+    .btn{
+
+        width: 35vw;
+        height: 5vh;
+
+        margin-top: 1vh;
+    
+    }
+
+    /*Titulos*/
+
+    .titulos-h2{
+
+        padding-top: 1vh;
+
+    }
+
+    #redes-sociais{
+
+        width: 55vw;
+
     }
 
 }
