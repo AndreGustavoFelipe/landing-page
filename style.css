@@ -480,7 +480,7 @@ i:hover{
 
     .titulo-card{
 
-        width: 50vw;
+        width: auto;
     
         padding-bottom: 1vh;
     
@@ -509,15 +509,21 @@ i:hover{
 
     .titulos-h2{
 
+        font-size: 3vh;
+
+        width: auto;
+
         padding-top: 1vh;
 
     }
 
     #redes-sociais{
 
-        width: 55vw;
+        width: auto;
 
     }
+
+    
 
 }
 
