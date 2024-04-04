@@ -490,6 +490,13 @@ i:hover{
     
     }
 
+    .img-card-projetos{
+
+        width: 70vw;
+        height: auto;
+    
+    }
+
     .card{
 
         width: 80vw;
@@ -546,7 +553,11 @@ i:hover{
 
     }
 
-    
+    .titulo-card{
+
+        width: 50vw;
+
+    }
 
 }
 
