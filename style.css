@@ -258,6 +258,18 @@ a{
 
 }
 
+
+
+.card-bottom-btns{
+
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+
+}
+
 .p-card{
 
     text-align: justify;
@@ -271,6 +283,17 @@ a{
 
     width: 11vw;
     height: auto;
+
+}
+
+.img-card-projetos{
+
+    width: 23vw;
+    height: 22vh;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 6px black;
 
 }
 
