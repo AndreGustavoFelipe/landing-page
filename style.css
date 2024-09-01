@@ -17,9 +17,10 @@
 
 }
 
-body{
+html, body{
 
     height: 100%;
+    width: 100%;
 
     overflow-y: scroll; /* Mostrar barra de rolagem vertical apenas quando necessário */
 
@@ -98,6 +99,8 @@ a{
 }
 
 #section-sobre-mim{
+
+    height: 100%;
 
     display: flex;
     flex-direction: row;
