@@ -470,7 +470,23 @@ i:hover{
 
 @media (max-width: 450px){
 
+    /*section*/
+
+    .section{
+
+
+        width: 85%;
+        margin-left: 15%;
+
+    }
+
     /*navbar*/
+
+    nav{
+
+        width: 15%;
+
+    }
 
     .ul-nav{
         
