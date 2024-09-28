@@ -148,8 +148,8 @@ a, i{
 
 .img-sobre-mim{
 
-    width: 25vw;
-    height: 84vh;
+    width: 33vw;
+    height: 95vh;
 
     transition: 1s ease-in-out;
 
@@ -548,7 +548,7 @@ i:hover{
 
     .img-card-projetos{
 
-        width: 70vw;
+        width: 55vw;
         height: auto;
     
     }
@@ -561,6 +561,8 @@ i:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.400);
 
         padding: 25px;
 
