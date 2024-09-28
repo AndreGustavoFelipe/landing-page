@@ -2,9 +2,10 @@
 
 :root {
     --colorPallet: #0d1117;
-    --backGround: #f0f0f0;
-    --title:#0d1117;
+    --backGround: #0d1117;
+    --title:white;
     --borderColor: #0d1117;
+    --cardColor: #161B22;
   }
 
 .anta-regular {
@@ -137,7 +138,7 @@ a, i{
 
     width: 50%;
 
-    margin-top: 14vh;
+    padding-top: 7vh;
 
     display: flex;
     flex-direction: column;
@@ -147,18 +148,19 @@ a, i{
 
 .img-sobre-mim{
 
-    width: 18vw;
-    height: 70vh;
+    width: 25vw;
+    height: 84vh;
 
-    border-bottom: 3px double rgb(0, 190, 0, 0.500);
-    border-radius: 5%;
+    transition: 1s ease-in-out;
 
 }
 
 .img-sobre-mim:hover{
 
     border-bottom-color: white;
-    transition: 500ms;
+
+    transform: scale(1.1);
+    
 
 }
 
@@ -205,30 +207,41 @@ a, i{
 
 }
 
-.card{
+.card-tec, .card-port{
 
     width: 25vw;
-    height: 30vh;
+    height: 40vh;
 
-    background-color: var(--colorPallet);
+    background-color: var(--cardColor);
 
-    border-radius: 20px;
+    border-radius: 40px;
 
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.808);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 3vh;
 
-    padding-bottom: 5vh;
+    transition: 1s ease-in-out;
+
+}
+
+.card-port{
+
+    height: 63vh;
+
+    padding: 20px;
+
+}
+
+.card-tec:hover, .card-port:hover{
+
+    transform: scale(1.05);
 
 }
 
 .card-top{
-
-    margin-top: 2.5vh;
 
     width: 25vw;
 
