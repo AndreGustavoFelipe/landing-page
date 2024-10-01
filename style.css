@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+.jetbrains-mono {
+    font-family: 'JetBrains Mono', monospace;
+}
 
 :root {
     --colorPallet: #0d1117;
@@ -6,12 +10,8 @@
     --title:white;
     --borderColor: #0d1117;
     --cardColor: #161B22;
-  }
-
-.anta-regular {
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    --titleH3: #00ff0084;
+    --titleH3Hovered: #00FF00;
   }
 
 *{
@@ -34,16 +34,22 @@ html, body{
 
 }
 
-header{
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--colorPallet);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--colorPallet);    /* color of the scroll thumb */
+    border-radius: 40px;       /* roundness of the scroll thumb */
+    border: 1px solid white;  /* creates padding around scroll thumb */
+  }
 
-    position: fixed;
 
-    width: 100%;
-    height: 10vh;
-
-}
-
-nav{
+nav, header{
 
     position: fixed;
 
@@ -119,6 +125,21 @@ a, i{
     
     margin-left: 5%;
 
+    background-color: var(--backGround);
+
+}
+
+#section-inicio{
+
+    width: 95%;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #section-sobre-mim{
@@ -127,22 +148,21 @@ a, i{
 
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     padding-bottom: 5vh;
-
-    background-color: var(--backGround);
 
 }
 
 .div-sobre-mim{
 
-    width: 50%;
-
-    padding-top: 7vh;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    transition: 1s ease-in-out;
 
 }
 
@@ -151,16 +171,7 @@ a, i{
     width: 33vw;
     height: 95vh;
 
-    transition: 1s ease-in-out;
-
-}
-
-.img-sobre-mim:hover{
-
-    border-bottom-color: white;
-
-    transform: scale(1.1);
-    
+    transition: display 1s ease-in-out;
 
 }
 
@@ -182,8 +193,6 @@ a, i{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background-color: var(--backGround);
 
 }
 
@@ -337,8 +346,6 @@ a, i{
 
 #section-portifolio{
 
-    background-color: var(--backGround);
-
     height: 100%;
 
     display: flex;
@@ -388,26 +395,16 @@ a, i{
 
 }
 
-#section-redes-sociais{
-
-    background-color: var(--backGround);
-
-    height: 40%;
+#btn-cv{
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    gap: 20px;
 
-
-}
-
-#redes-sociais{
-
-    margin: 3%;
-
-    width: 24vw;
+    width: 7vw;
 
 }
+
 
 .container{
 
@@ -435,17 +432,17 @@ i{
 
     font-size: 3vh;
 
+    cursor: pointer;
+
+    transition: 500ms;
+
 }
 
 i:hover{
 
-    font-size: 3.2vh;
+    transform: scale(1.2);
 
-    color: rgb(0, 190, 0, 0.500);
-
-    cursor: pointer;
-
-    transition: 500ms;
+    color: var(--titleH3);
 
 }
 
@@ -469,14 +466,33 @@ i:hover{
 
 .titulos-h3{
 
-    color: var(--title);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    color: var(--titleH3);
 
     font-size: 3vh;
 
-    width: 60%;
+    transition: 1s ease-in-out;
 
-    display: flex;
-    justify-content: start;    
+}
+
+.titulos-h3:hover{
+
+    color: var(--titleH3Hovered);
+
+}
+
+.risco-divisao{
+
+    width: 5vw;
+    height: 1px;
+
+
+
+    background-color: white;
 
 }
 
@@ -617,12 +633,6 @@ i:hover{
         width: auto;
 
         padding-top: 1vh;
-
-    }
-
-    #redes-sociais{
-
-        width: auto;
 
     }
 
