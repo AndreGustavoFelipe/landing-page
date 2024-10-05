@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
-
-.jetbrains-mono {
-    font-family: 'JetBrains Mono', monospace;
-}
-
 :root {
     --colorPallet: #0d1117;
     --backGround: #0d1117;
@@ -14,12 +8,32 @@
     --titleH3Hovered: #00FF00;
   }
 
+@keyframes animaMarcador{
+
+    50%{
+        border-right: transparent;
+    }
+
+}
+
+@keyframes animaTexto{
+
+    0%{
+        width: 0;
+    }
+
+    100% {
+        width: 20ch;
+    }
+
+}
+
 *{
 
     margin: 0;
     padding: 0;
 
-    font-family: "Anta", sans-serif;
+    font-family: monospace;
 
     color: var(--title);
 
@@ -30,22 +44,22 @@ html, body{
     height: 100%;
     width: 100%;
 
-    overflow-y: scroll; /* Mostrar barra de rolagem vertical apenas quando necessário */
+    overflow-y: scroll; 
 
 }
 
 body::-webkit-scrollbar {
-    width: 8px;               /* width of the entire scrollbar */
+    width: 8px;              
   }
   
   body::-webkit-scrollbar-track {
-    background: var(--colorPallet);        /* color of the tracking area */
+    background: var(--colorPallet);   
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: var(--colorPallet);    /* color of the scroll thumb */
-    border-radius: 40px;       /* roundness of the scroll thumb */
-    border: 1px solid white;  /* creates padding around scroll thumb */
+    background-color: var(--colorPallet);    
+    border-radius: 40px;       
+    border: 1px solid white;  
   }
 
 
@@ -79,11 +93,7 @@ nav:hover .li-nav{
 
     opacity: 1;
 
-}
-
-nav:hover .div-ul-li{
-
-    pointer-events: none;
+    width: 5vw;
 
 }
 
@@ -115,15 +125,29 @@ nav:hover .div-ul-li{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    
+    cursor: pointer;
+
 
 }
 
 .li-nav{
     
-    opacity: 1;
+    opacity: 0;
 
-    transition: 1.5s ease-in-out;
+    width: 0;
+
+    transition: width 1s ease-in-out;
+
+}
+
+.a-ul-nav{
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
 }
 
@@ -139,6 +163,30 @@ a, i{
 .a-nav:hover, .titulo-nav:hover, i:hover{
     cursor: pointer;
     transform: scale(1.2);
+}
+
+.div-titulo-principal{
+
+    width: 30vw;
+
+    display: flex;
+    justify-content: start;
+
+}
+
+.titulo-principal{
+
+    font-size: 5em;
+
+    border-right: 4px white solid;
+
+    white-space: nowrap;
+    max-width: 20ch;
+
+    overflow: hidden;
+
+    animation: animaTexto 2s steps(20) forwards, animaMarcador 1s linear infinite;
+    
 }
 
 .section{
@@ -162,6 +210,17 @@ a, i{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+.div-inicio{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
 
 }
 
