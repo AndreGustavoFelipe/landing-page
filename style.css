@@ -85,7 +85,15 @@ nav, header{
 
 header:hover, nav:hover{
 
-    width: 10%;
+    width: 15%;
+
+}
+
+nav:hover .a-ul-nav{
+
+    width: 100%;
+
+    gap: 0px;
 
 }
 
@@ -121,6 +129,8 @@ nav:hover .li-nav{
 
     width: 100%;
 
+    position: relative;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -132,22 +142,51 @@ nav:hover .li-nav{
 }
 
 .li-nav{
-    
-    opacity: 0;
+
+    font-size: 1.8vh;
+
+    opacity: 1;
 
     width: 0;
 
     transition: width 1s ease-in-out;
 
+    pointer-events: none;
+
+}
+
+.li-icon{
+
+    pointer-events: none;
+
+    transition: 0.5s ease-in-out;
+
 }
 
 .a-ul-nav{
 
-    width: 100%;
+    width: 40%;
+    height: 4vh;
+
+    overflow: hidden;
 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.a-ul-nav:hover{
+
+    transform: scale(1.1);  
+
+}
+
+.a-ul-nav:hover .li-icon{
+
+    transform: rotate(20deg);
 
 }
 
@@ -250,8 +289,8 @@ a, i{
 
 .img-sobre-mim{
 
-    width: 33vw;
-    height: 95vh;
+    width: 26vw;
+    height: 100vh;
 
     transition: display 1s ease-in-out;
 
@@ -565,14 +604,42 @@ i:hover{
 
 }
 
-.risco-divisao{
+.a-curriculo{
 
-    width: 5vw;
-    height: 1px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 
+    font-size: 2.5vh;
 
+    border: 1px solid white;
+    border-radius: 20px;
 
-    background-color: white;
+    padding: 20px;
+
+    transition: 0.5s ease-in-out;
+
+}
+
+.a-curriculo:hover{
+
+    color: var(--titleH3Hovered);
+
+    border-radius: 40px;
+
+}
+
+.a-curriculo:hover #i-cv{
+
+    color: var(--titleH3Hovered);
+
+}
+
+#i-cv{
+
+    pointer-events: none;
+
+    transition: 0.5s ease-in-out;
 
 }
 
