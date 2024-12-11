@@ -670,9 +670,33 @@ i:hover{
     align-items: center;
 }
 
+.pnl-bloqueio{
+    background-color: black;
+    opacity: 0.9;
+    
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.pnl-bloqueio h1{
+    position: relative;
+    color: white;
+    opacity: 1;
+    font-size: 10vh;
+}
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 450px){
+
+    .pnl-bloqueio h1{
+        font-size: 4vh;
+    }
 
     /*section*/
 
@@ -819,8 +843,9 @@ i:hover{
 }
 
 @media (min-width: 451px) and (max-width: 750px){
-
-    
+    .pnl-bloqueio h1{
+        font-size: 5vh;
+    }
 }
 
 @media (min-width: 751px) and (max-width: 1250px){
