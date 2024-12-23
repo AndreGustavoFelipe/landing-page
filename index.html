@@ -86,10 +86,11 @@
 
                 <div class="div-mais-informacoes">
                     <div class="div-whats">
-                        <h2>Escreva a sua dúvida aqui:</h2>
-                        <input type="text" placeholder="Ex: Olá, André! Gostaria de saber mais sobre o seu trabalho." class="input-msg-whats">
-                        <a href="https://wa.me/47988247357" hidden>armazenando link whats</a>
-                        <button class="btn" id="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i></button>
+                        <h2>Deseja falar comigo? Escreva sua duvida aqui:</h2>
+                        <form action="https://wa.me/47988247357" method="get" target="_blank">
+                            <input class="input-msg-whats" type="text" id="message" name="text" placeholder="Ex: Olá, André! Gostaria de saber mais sobre o seu trabalho."><br><br>
+                            <button class="btn" id="btn-whatsapp" type="submit"><i class="fa-brands fa-whatsapp"></i></button>
+                        </form>
                     </div class="div-curriculo">
                     <div><a href="imgs/curriculo.pdf" download="curriculo.pdf" class="a-curriculo">Curriculum Vitae<i class="fa-solid fa-download" id="i-cv"></i></a></div>
                 </div>
