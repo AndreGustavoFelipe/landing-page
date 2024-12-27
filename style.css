@@ -324,12 +324,12 @@ a, i{
     flex-direction: column;
     align-items: center;
 
+    padding-bottom: 5vh;
+
 }
 
 #tecnologias{
-
     margin: 3%;
-
 }
 
 .container-cards{
@@ -339,11 +339,21 @@ a, i{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 5vh;
+    justify-content: center;
+    gap: 3vw;
 
-    padding-bottom: 10vh;
+   /* padding-bottom: 10vh; */
 
+}
+
+.container-tecs{
+    width: 40vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
 .card-tec, .card-port{
@@ -366,6 +376,11 @@ a, i{
 
 }
 
+.card-tec{
+    width: 10vw;
+    height: 20vh;
+}
+
 .card-port{
 
     height: 63vh;
@@ -375,14 +390,16 @@ a, i{
 }
 
 .card-tec:hover, .card-port:hover{
-
     transform: scale(1.05);
+}
 
+.tec{
+    font-size: 2vh;
 }
 
 .card-top{
 
-    width: 25vw;
+    width: auto;
 
     display: flex;
     flex-direction: column;
@@ -458,7 +475,7 @@ a, i{
 
 .img-card{
 
-    width: 11vw;
+    width: 4vw;
     height: auto;
 
 }
@@ -479,6 +496,8 @@ a, i{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-bottom: 5vh;
 
 }
 
@@ -680,7 +699,7 @@ i:hover{
 .input-msg-whats{
     background-color: transparent;
 
-    height: 4vh;
+    height: 3vh;
     width: 35vw;
 
     font-size: 2vh;
@@ -694,6 +713,7 @@ i:hover{
 
 .input-msg-whats:focus{
     border: 1px solid var(--titleH3Hovered);
+    padding: 7px;
 }
 
 .div-mais-informacoes{
@@ -816,7 +836,7 @@ i:hover{
 
     .card-port, .card-tec{
 
-        width: 50vw;
+        width: 10vw;
         height: auto;
 
         display: flex;
@@ -853,11 +873,8 @@ i:hover{
     }
     
     .card-bottom{
-    
         width: 67vw;
-    
         row-gap: 2vh;
-    ''
     }
 
     .btn{
