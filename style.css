@@ -383,18 +383,20 @@ a, i{
 
 .card-port{
 
-    height: 63vh;
+    height: 70vh;
 
     padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    row-gap: 2vh;
 
 }
 
 .card-tec:hover, .card-port:hover{
     transform: scale(1.05);
-}
-
-.tec{
-    font-size: 2vh;
 }
 
 .card-top{
@@ -411,52 +413,59 @@ a, i{
 
 .titulo-card{
 
-    width: 15vw;
+    width: 10vw;
 
     display: flex;
     justify-content: center;
 
-    padding-bottom: 1vh;
+    padding-bottom: 0.5vh;
 
-    font-size: 3vh;
+    font-size: 2.7vh;
 
     color: white;
 
     border-bottom: 1px solid rgb(0, 190, 0);
 
+    transition: 500ms ease-in-out;
+
+}
+
+.titulos-card-bloqueados{
+    user-select: none;
+    pointer-events: none;
+}
+
+.container-titulos-card{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;  
+    cursor: pointer;  
 }
 
 .titulo-card:hover{
-
-    color: rgb(0, 190, 0);
+    color: var(--titleH3Hovered);
 
     border-bottom: 1px solid white;
-
-    cursor: default;
-
-    font-size: 3.5vh;
-
-    transition: 500ms;
-
 }
 
 .card-bottom{
-
     width: 24vw;
+    height: auto;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    row-gap: 2vh;
-
+    justify-content: space-between;
+    row-gap: 3vh;
 }
 
-
+.card-center{
+    width: 24vw;
+}
 
 .card-bottom-btns{
 
-    width: auto;
+    width: 24vw;
 
     display: flex;
     flex-direction: row;
@@ -618,9 +627,8 @@ i:hover{
     font-size: 4.5vh;
 
     color: var(--title);
-    
-    cursor: pointer;
-    transition: 500ms ease;
+
+    transition: 500ms ease-in-out;
 
 }
 
@@ -702,18 +710,19 @@ i:hover{
     height: 3vh;
     width: 35vw;
 
-    font-size: 2vh;
+    font-size: 1.6vh;
 
     border: 1px solid var(--titleH3);
     border-radius: 20px;
     padding: 5px;
+    padding-left: 8px;
 
     transition: 0.5s ease-in-out;
 }
 
 .input-msg-whats:focus{
     border: 1px solid var(--titleH3Hovered);
-    padding: 7px;
+    padding-left: 10px;
 }
 
 .div-mais-informacoes{
@@ -755,6 +764,54 @@ i:hover{
     color: white;
     opacity: 1;
     font-size: 10vh;
+}
+
+.container-cards-tecs{
+    width: 24vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    column-gap: 15px;
+}
+
+.tec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 3vh;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.8vh;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.tec-html{
+    background-color: #e34c26;
+}
+
+.tec-css{
+    background-color: #264de4;
+}
+
+.tec-javascript{
+    background-color: #f7df1e;
+}
+
+.tec-php{
+    background-color: #777bb3;
+}
+
+.tec-delphi{
+    background-color: #b22222 ;
+}
+
+.tec-cplusplus{
+    background-color: #00599c;
 }
 
 /* RESPONSIVIDADE */
